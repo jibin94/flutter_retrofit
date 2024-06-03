@@ -17,24 +17,24 @@ In Retrofit, method parameters allow you to define the types of requests you wan
 `@PATCH`: This annotation is used for PATCH requests to partially update existing data on the server.
 
 **Annotations**<br/>
-`@Path`: This annotation is used to replace a part of the URL with the given parameter. It is often used for specifying resource IDs.
+`@Path`: This annotation is used to replace a part of the URL with the given parameter. It is often used for specifying resource IDs.<br/>
 `@GET("/users/{id}")
-Future<User> getUser(@Path("id") int userId);`
+Future<User> getUser(@Path("id") int userId);`<br/>
 In this example, {id} in the URL will be replaced with the value of userId.
 
-`@Query`: This annotation is used to add query parameters to the URL.
+`@Query`: This annotation is used to add query parameters to the URL.<br/>
 `@GET("/users")
-Future<List<User>> getUsers(@Query("page") int page, @Query("limit") int limit);`
+Future<List<User>> getUsers(@Query("page") int page, @Query("limit") int limit);`<br/>
 This will result in a URL like /users?page=1&limit=10.
 
-`@Body`: This annotation is used to send a request body with POST, PUT, or PATCH requests.
+`@Body`: This annotation is used to send a request body with POST, PUT, or PATCH requests.<br/>
 `@POST("/users")
-Future<User> createUser(@Body() User user);`
+Future<User> createUser(@Body() User user);`<br/>
 The User object will be converted to JSON and sent as the request body.
 
-`@Headers`- This annotation is used to specify HTTP headers that should be added to a request. These headers are static and defined at compile time. If you need dynamic headers (headers that can change at runtime), you should use the `@Header` parameter annotation.
+`@Headers`- This annotation is used to specify HTTP headers that should be added to a request. These headers are static and defined at compile time. If you need dynamic headers (headers that can change at runtime), you should use the `@Header` parameter annotation.<br/>
 **Static Headers**<br/>
-Static headers are defined using the @Headers annotation at the method level. These headers are fixed and will be included in every request made by the annotated method.
+Static headers are defined using the @Headers annotation at the method level. These headers are fixed and will be included in every request made by the annotated method.<br/>
 `@Headers(<String, dynamic>{
 "Content-Type": "application/json",
 "Accept": "application/json"
@@ -43,7 +43,7 @@ Static headers are defined using the @Headers annotation at the method level. Th
 Future<Post> createPost(@Body() Post post);`
 
 **Dynamic Headers**<br/>
-Dynamic headers are defined using the @Header parameter annotation. This allows you to specify headers at runtime, which can be different for each request.
+Dynamic headers are defined using the @Header parameter annotation. This allows you to specify headers at runtime, which can be different for each request.<br/>
 `@POST("/posts")
 Future<Post> createPost(
 @Body() Post post,
