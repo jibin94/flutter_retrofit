@@ -1,7 +1,7 @@
 ## Plugins used
 
-`dio` : Used as the HTTP client for making network requests.
-`retrofit` : Simplifies the process of defining API endpoints using annotations. It generates the necessary code for making HTTP requests using `retrofit_generator` and `build_runner`.
+`dio` : Used as the HTTP client for making network requests.<br/>
+`retrofit` : Simplifies the process of defining API endpoints using annotations. It generates the necessary code for making HTTP requests using `retrofit_generator` and `build_runner`.<br/>
 `json_annotation` and `json_serializable` work together to generate the code for serializing and deserializing JSON data to and from Dart objects.
 `get_it` is used for dependency injection, allowing you to manage your dependencies efficiently and make your code more modular and testable.
 
