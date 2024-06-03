@@ -10,10 +10,10 @@
 **Method parameters**<br/>
 In Retrofit, method parameters allow you to define the types of requests you want to make and how to send data along with those requests. Here's an overview of the different types of method parameters you can use in Retrofit for Flutter:
 
-`@GET`: This annotation is used for GET requests to retrieve data from the server.
-`@POST`: This annotation is used for POST requests to send data to the server.
-`@PUT`: This annotation is used for PUT requests to update existing data on the server.
-`@DELETE`: This annotation is used for DELETE requests to remove data from the server.
+`@GET`: This annotation is used for GET requests to retrieve data from the server.<br/>
+`@POST`: This annotation is used for POST requests to send data to the server.<br/>
+`@PUT`: This annotation is used for PUT requests to update existing data on the server.<br/>
+`@DELETE`: This annotation is used for DELETE requests to remove data from the server.<br/>
 `@PATCH`: This annotation is used for PATCH requests to partially update existing data on the server.
 
 **Annotations**<br/>
